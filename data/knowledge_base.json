@@ -9,13 +9,24 @@
     "category": "health",
     "verification_status": "verified",
     "confidence": 0.95,
-    "keywords": ["vaccines", "safe", "effective", "WHO", "immunization"],
+    "keywords": [
+      "vaccines",
+      "safe",
+      "effective",
+      "WHO",
+      "immunization"
+    ],
     "claims": [
       "Vaccines prevent diseases",
       "Vaccines are thoroughly tested",
       "WHO recommends vaccination"
     ],
-    "related_topics": ["healthcare", "public health", "medicine"]
+    "related_topics": [
+      "healthcare",
+      "public health",
+      "medicine"
+    ],
+    "combined_text": "Vaccines are safe and effective according to WHO. Vaccines prevent diseases Vaccines are thoroughly tested WHO recommends vaccination vaccines safe effective WHO immunization healthcare public health medicine"
   },
   {
     "id": "kb_002",
@@ -27,13 +38,23 @@
     "category": "environment",
     "verification_status": "verified",
     "confidence": 0.98,
-    "keywords": ["climate change", "global warming", "scientific consensus", "IPCC"],
+    "keywords": [
+      "climate change",
+      "global warming",
+      "scientific consensus",
+      "IPCC"
+    ],
     "claims": [
       "Earth's temperature is rising",
       "Human activities cause climate change",
       "Scientific community agrees on climate change"
     ],
-    "related_topics": ["environment", "science", "policy"]
+    "related_topics": [
+      "environment",
+      "science",
+      "policy"
+    ],
+    "combined_text": "Climate change is supported by scientific consensus. Earth's temperature is rising Human activities cause climate change Scientific community agrees on climate change climate change global warming scientific consensus IPCC environment science policy"
   },
   {
     "id": "kb_003",
@@ -45,13 +66,23 @@
     "category": "media",
     "verification_status": "verified",
     "confidence": 0.92,
-    "keywords": ["misinformation", "social media", "fake news", "viral"],
+    "keywords": [
+      "misinformation",
+      "social media",
+      "fake news",
+      "viral"
+    ],
     "claims": [
       "False news spreads faster than truth",
       "Social media amplifies misinformation",
       "Bots contribute to misinformation spread"
     ],
-    "related_topics": ["social media", "journalism", "technology"]
+    "related_topics": [
+      "social media",
+      "journalism",
+      "technology"
+    ],
+    "combined_text": "Misinformation spreads rapidly on social media platforms. False news spreads faster than truth Social media amplifies misinformation Bots contribute to misinformation spread misinformation social media fake news viral social media journalism technology"
   },
   {
     "id": "kb_004",
@@ -63,13 +94,24 @@
     "category": "science",
     "verification_status": "verified",
     "confidence": 0.85,
-    "keywords": ["alien", "UFO", "extraterrestrial", "NASA", "technology"],
+    "keywords": [
+      "alien",
+      "UFO",
+      "extraterrestrial",
+      "NASA",
+      "technology"
+    ],
     "claims": [
       "No confirmed alien artifacts found",
       "UFO sightings have natural explanations",
       "Search for extraterrestrial intelligence continues"
     ],
-    "related_topics": ["space", "astronomy", "conspiracy theories"]
+    "related_topics": [
+      "space",
+      "astronomy",
+      "conspiracy theories"
+    ],
+    "combined_text": "No evidence supports the existence of alien technology on Earth. No confirmed alien artifacts found UFO sightings have natural explanations Search for extraterrestrial intelligence continues alien UFO extraterrestrial NASA technology space astronomy conspiracy theories"
   },
   {
     "id": "kb_005",
@@ -80,14 +122,24 @@
     "url": "https://www.archives.gov/declassification",
     "category": "politics",
     "verification_status": "verified",
-    "confidence": 0.90,
-    "keywords": ["government", "classified", "declassification", "transparency"],
+    "confidence": 0.9,
+    "keywords": [
+      "government",
+      "classified",
+      "declassification",
+      "transparency"
+    ],
     "claims": [
       "Declassification occurs after set periods",
       "Some documents remain classified indefinitely",
       "Freedom of Information requests can accelerate release"
     ],
-    "related_topics": ["government", "transparency", "history"]
+    "related_topics": [
+      "government",
+      "transparency",
+      "history"
+    ],
+    "combined_text": "Governments release classified data after certain periods. Declassification occurs after set periods Some documents remain classified indefinitely Freedom of Information requests can accelerate release government classified declassification transparency government transparency history"
   },
   {
     "id": "kb_006",
@@ -99,13 +151,23 @@
     "category": "politics",
     "verification_status": "verified",
     "confidence": 0.88,
-    "keywords": ["elections", "democracy", "voting", "oversight"],
+    "keywords": [
+      "elections",
+      "democracy",
+      "voting",
+      "oversight"
+    ],
     "claims": [
       "Democratic elections have multiple safeguards",
       "International observers monitor elections",
       "Voter fraud is rare in established democracies"
     ],
-    "related_topics": ["politics", "democracy", "governance"]
+    "related_topics": [
+      "politics",
+      "democracy",
+      "governance"
+    ],
+    "combined_text": "Elections are conducted fairly in democratic countries with proper oversight. Democratic elections have multiple safeguards International observers monitor elections Voter fraud is rare in established democracies elections democracy voting oversight politics democracy governance"
   },
   {
     "id": "kb_007",
@@ -117,13 +179,24 @@
     "category": "technology",
     "verification_status": "verified",
     "confidence": 0.94,
-    "keywords": ["AI", "bias", "algorithms", "ethics", "training data"],
+    "keywords": [
+      "AI",
+      "bias",
+      "algorithms",
+      "ethics",
+      "training data"
+    ],
     "claims": [
       "AI models learn from biased data",
       "Algorithmic bias affects decisions",
       "Fairness metrics help detect bias"
     ],
-    "related_topics": ["artificial intelligence", "ethics", "technology"]
+    "related_topics": [
+      "artificial intelligence",
+      "ethics",
+      "technology"
+    ],
+    "combined_text": "Artificial intelligence systems can exhibit bias based on training data. AI models learn from biased data Algorithmic bias affects decisions Fairness metrics help detect bias AI bias algorithms ethics training data artificial intelligence ethics technology"
   },
   {
     "id": "kb_008",
@@ -135,13 +208,24 @@
     "category": "economics",
     "verification_status": "verified",
     "confidence": 0.89,
-    "keywords": ["sanctions", "economy", "GDP", "trade", "international relations"],
+    "keywords": [
+      "sanctions",
+      "economy",
+      "GDP",
+      "trade",
+      "international relations"
+    ],
     "claims": [
       "Sanctions reduce trade volume",
       "Economic growth slows under sanctions",
       "Sanctions affect civilian populations"
     ],
-    "related_topics": ["economics", "international relations", "policy"]
+    "related_topics": [
+      "economics",
+      "international relations",
+      "policy"
+    ],
+    "combined_text": "Economic sanctions can impact target countries' GDP growth. Sanctions reduce trade volume Economic growth slows under sanctions Sanctions affect civilian populations sanctions economy GDP trade international relations economics international relations policy"
   },
   {
     "id": "kb_009",
@@ -153,13 +237,23 @@
     "category": "technology",
     "verification_status": "verified",
     "confidence": 0.96,
-    "keywords": ["algorithms", "personalization", "recommendation", "social media"],
+    "keywords": [
+      "algorithms",
+      "personalization",
+      "recommendation",
+      "social media"
+    ],
     "claims": [
       "Algorithms track user behavior",
       "Content is personalized based on interests",
       "Filter bubbles can form from personalization"
     ],
-    "related_topics": ["social media", "algorithms", "privacy"]
+    "related_topics": [
+      "social media",
+      "algorithms",
+      "privacy"
+    ],
+    "combined_text": "Social media platforms use algorithms to personalize content for users. Algorithms track user behavior Content is personalized based on interests Filter bubbles can form from personalization algorithms personalization recommendation social media social media algorithms privacy"
   },
   {
     "id": "kb_010",
@@ -171,12 +265,22 @@
     "category": "health",
     "verification_status": "verified",
     "confidence": 0.97,
-    "keywords": ["WHO", "public health", "pandemic", "international cooperation"],
+    "keywords": [
+      "WHO",
+      "public health",
+      "pandemic",
+      "international cooperation"
+    ],
     "claims": [
       "WHO declares public health emergencies",
       "WHO provides technical guidance to countries",
       "WHO coordinates global health research"
     ],
-    "related_topics": ["health", "international relations", "pandemics"]
+    "related_topics": [
+      "health",
+      "international relations",
+      "pandemics"
+    ],
+    "combined_text": "The World Health Organization coordinates international public health responses. WHO declares public health emergencies WHO provides technical guidance to countries WHO coordinates global health research WHO public health pandemic international cooperation health international relations pandemics"
   }
 ]
