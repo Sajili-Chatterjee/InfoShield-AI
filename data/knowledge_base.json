@@ -1,0 +1,182 @@
+[
+  {
+    "id": "kb_001",
+    "text": "Vaccines are safe and effective according to WHO.",
+    "source": "World Health Organization",
+    "source_type": "health_organization",
+    "date": "2024-01-15",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/vaccines",
+    "category": "health",
+    "verification_status": "verified",
+    "confidence": 0.95,
+    "keywords": ["vaccines", "safe", "effective", "WHO", "immunization"],
+    "claims": [
+      "Vaccines prevent diseases",
+      "Vaccines are thoroughly tested",
+      "WHO recommends vaccination"
+    ],
+    "related_topics": ["healthcare", "public health", "medicine"]
+  },
+  {
+    "id": "kb_002",
+    "text": "Climate change is supported by scientific consensus.",
+    "source": "IPCC",
+    "source_type": "scientific_body",
+    "date": "2023-12-10",
+    "url": "https://www.ipcc.ch/report/ar6/syr/",
+    "category": "environment",
+    "verification_status": "verified",
+    "confidence": 0.98,
+    "keywords": ["climate change", "global warming", "scientific consensus", "IPCC"],
+    "claims": [
+      "Earth's temperature is rising",
+      "Human activities cause climate change",
+      "Scientific community agrees on climate change"
+    ],
+    "related_topics": ["environment", "science", "policy"]
+  },
+  {
+    "id": "kb_003",
+    "text": "Misinformation spreads rapidly on social media platforms.",
+    "source": "MIT Media Lab",
+    "source_type": "research_institution",
+    "date": "2024-02-20",
+    "url": "https://www.media.mit.edu/projects/fake-news/overview/",
+    "category": "media",
+    "verification_status": "verified",
+    "confidence": 0.92,
+    "keywords": ["misinformation", "social media", "fake news", "viral"],
+    "claims": [
+      "False news spreads faster than truth",
+      "Social media amplifies misinformation",
+      "Bots contribute to misinformation spread"
+    ],
+    "related_topics": ["social media", "journalism", "technology"]
+  },
+  {
+    "id": "kb_004",
+    "text": "No evidence supports the existence of alien technology on Earth.",
+    "source": "NASA",
+    "source_type": "space_agency",
+    "date": "2023-11-05",
+    "url": "https://www.nasa.gov/seti/",
+    "category": "science",
+    "verification_status": "verified",
+    "confidence": 0.85,
+    "keywords": ["alien", "UFO", "extraterrestrial", "NASA", "technology"],
+    "claims": [
+      "No confirmed alien artifacts found",
+      "UFO sightings have natural explanations",
+      "Search for extraterrestrial intelligence continues"
+    ],
+    "related_topics": ["space", "astronomy", "conspiracy theories"]
+  },
+  {
+    "id": "kb_005",
+    "text": "Governments release classified data after certain periods.",
+    "source": "National Archives",
+    "source_type": "government",
+    "date": "2024-01-30",
+    "url": "https://www.archives.gov/declassification",
+    "category": "politics",
+    "verification_status": "verified",
+    "confidence": 0.90,
+    "keywords": ["government", "classified", "declassification", "transparency"],
+    "claims": [
+      "Declassification occurs after set periods",
+      "Some documents remain classified indefinitely",
+      "Freedom of Information requests can accelerate release"
+    ],
+    "related_topics": ["government", "transparency", "history"]
+  },
+  {
+    "id": "kb_006",
+    "text": "Elections are conducted fairly in democratic countries with proper oversight.",
+    "source": "International Institute for Democracy",
+    "source_type": "NGO",
+    "date": "2024-03-01",
+    "url": "https://www.idea.int/data-tools",
+    "category": "politics",
+    "verification_status": "verified",
+    "confidence": 0.88,
+    "keywords": ["elections", "democracy", "voting", "oversight"],
+    "claims": [
+      "Democratic elections have multiple safeguards",
+      "International observers monitor elections",
+      "Voter fraud is rare in established democracies"
+    ],
+    "related_topics": ["politics", "democracy", "governance"]
+  },
+  {
+    "id": "kb_007",
+    "text": "Artificial intelligence systems can exhibit bias based on training data.",
+    "source": "AI Ethics Lab",
+    "source_type": "research_institution",
+    "date": "2024-02-15",
+    "url": "https://www.aiethicslab.org/bias",
+    "category": "technology",
+    "verification_status": "verified",
+    "confidence": 0.94,
+    "keywords": ["AI", "bias", "algorithms", "ethics", "training data"],
+    "claims": [
+      "AI models learn from biased data",
+      "Algorithmic bias affects decisions",
+      "Fairness metrics help detect bias"
+    ],
+    "related_topics": ["artificial intelligence", "ethics", "technology"]
+  },
+  {
+    "id": "kb_008",
+    "text": "Economic sanctions can impact target countries' GDP growth.",
+    "source": "World Bank",
+    "source_type": "international_organization",
+    "date": "2023-09-12",
+    "url": "https://www.worldbank.org/en/topic/trade",
+    "category": "economics",
+    "verification_status": "verified",
+    "confidence": 0.89,
+    "keywords": ["sanctions", "economy", "GDP", "trade", "international relations"],
+    "claims": [
+      "Sanctions reduce trade volume",
+      "Economic growth slows under sanctions",
+      "Sanctions affect civilian populations"
+    ],
+    "related_topics": ["economics", "international relations", "policy"]
+  },
+  {
+    "id": "kb_009",
+    "text": "Social media platforms use algorithms to personalize content for users.",
+    "source": "Tech Transparency Project",
+    "source_type": "research",
+    "date": "2024-01-22",
+    "url": "https://www.techtransparencyproject.org/",
+    "category": "technology",
+    "verification_status": "verified",
+    "confidence": 0.96,
+    "keywords": ["algorithms", "personalization", "recommendation", "social media"],
+    "claims": [
+      "Algorithms track user behavior",
+      "Content is personalized based on interests",
+      "Filter bubbles can form from personalization"
+    ],
+    "related_topics": ["social media", "algorithms", "privacy"]
+  },
+  {
+    "id": "kb_010",
+    "text": "The World Health Organization coordinates international public health responses.",
+    "source": "WHO",
+    "source_type": "international_organization",
+    "date": "2024-03-10",
+    "url": "https://www.who.int/about",
+    "category": "health",
+    "verification_status": "verified",
+    "confidence": 0.97,
+    "keywords": ["WHO", "public health", "pandemic", "international cooperation"],
+    "claims": [
+      "WHO declares public health emergencies",
+      "WHO provides technical guidance to countries",
+      "WHO coordinates global health research"
+    ],
+    "related_topics": ["health", "international relations", "pandemics"]
+  }
+]

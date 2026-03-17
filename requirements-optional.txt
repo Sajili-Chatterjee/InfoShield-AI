@@ -1,0 +1,25 @@
+# requirements-optional.txt
+# Optional dependencies for advanced features
+
+# Advanced ML models
+tensorflow>=2.13.0     # Alternative to PyTorch
+onnxruntime>=1.15.0    # Model optimization
+xgboost>=2.0.0         # Gradient boosting
+lightgbm>=4.0.0        # Gradient boosting
+
+# Cloud services (optional)
+boto3>=1.28.0          # AWS SDK
+google-cloud-vision>=3.4.0  # Google Cloud Vision OCR
+azure-cognitiveservices-vision-computervision>=0.9.0  # Azure OCR
+
+# Database (optional)
+pymongo>=4.4.0         # MongoDB driver
+psycopg2-binary>=2.9.0 # PostgreSQL driver
+
+# Async support
+aiohttp>=3.8.0         # Async HTTP
+asyncio>=3.4.3         # Async I/O
+
+# Visualization (for dashboard)
+matplotlib>=3.7.0      # Plotting
+plotly>=5.15.0         # Interactive plots

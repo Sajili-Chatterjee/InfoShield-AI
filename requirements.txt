@@ -1,0 +1,100 @@
+# requirements.txt
+# InfoShield-AI - Fake News Detection System
+
+# ===============================
+# 🔹 Core Web Framework
+# ===============================
+flask>=2.3.0
+flask-cors>=4.0.0  # For cross-origin requests
+gunicorn>=20.1.0   # Production WSGI server
+python-dotenv>=1.0.0  # Environment variable management
+
+# ===============================
+# 🔹 Machine Learning & NLP
+# ===============================
+# Preserved original ML dependencies
+transformers>=4.30.0  # Hugging Face transformers
+torch>=2.0.0          # PyTorch
+scikit-learn>=1.3.0   # Scikit-learn
+nltk>=3.8.1          # Natural Language Toolkit
+numpy>=1.24.0        # NumPy
+pandas>=2.0.0        # Pandas
+
+# Additional ML/NLP
+sentence-transformers>=2.2.0  # For better text embeddings
+spacy>=3.6.0          # Alternative NLP library
+textblob>=0.17.1      # Simplified text processing
+
+# ===============================
+# 🔹 Web Scraping & URL Processing
+# ===============================
+newspaper3k>=0.2.8    # Article extraction (preserved)
+beautifulsoup4>=4.12.0 # HTML parsing (preserved)
+requests>=2.31.0       # HTTP requests (preserved)
+lxml>=4.9.0           # Fast XML/HTML parsing
+urllib3>=2.0.0        # HTTP client
+selenium>=4.11.0      # For dynamic content (optional)
+
+# ===============================
+# 🔹 OCR & Image Processing (NEW)
+# ===============================
+pytesseract>=0.3.10   # Tesseract OCR for text extraction
+Pillow>=10.0.0        # Python Imaging Library
+opencv-python>=4.8.0  # OpenCV for image preprocessing
+pdf2image>=1.16.0     # PDF to image conversion (optional)
+
+# ===============================
+# 🔹 Social Media APIs (NEW)
+# ===============================
+praw>=7.7.0           # Reddit API (preserved)
+tweepy>=4.14.0        # Twitter API v2
+facebook-sdk>=3.1.0   # Facebook Graph API
+instaloader>=4.10.0   # Instagram content extraction
+youtube-transcript-api>=0.6.0  # YouTube transcripts
+
+# ===============================
+# 🔹 Data Processing & Storage
+# ===============================
+json5>=0.9.14         # Enhanced JSON parsing
+pyyaml>=6.0           # YAML support
+redis>=4.6.0          # Caching (optional)
+sqlalchemy>=2.0.0     # Database ORM (optional)
+
+# ===============================
+# 🔹 Utilities & Performance
+# ===============================
+tqdm>=4.65.0          # Progress bars
+joblib>=1.3.0         # Parallel processing
+cachetools>=5.3.0     # Caching utilities
+python-magic>=0.4.27  # File type detection
+python-dateutil>=2.8.2 # Date parsing
+
+# ===============================
+# 🔹 Testing & Development
+# ===============================
+pytest>=7.4.0         # Testing framework
+pytest-cov>=4.1.0     # Coverage reporting
+black>=23.0.0         # Code formatting
+flake8>=6.0.0         # Linting
+mypy>=1.4.0           # Type checking
+requests-mock>=1.11.0 # Mock HTTP requests
+
+# ===============================
+# 🔹 Monitoring & Debugging
+# ===============================
+flask-caching>=2.0.0  # Response caching
+prometheus-flask-exporter>=0.22.0  # Metrics (optional)
+sentry-sdk>=1.29.0    # Error tracking (optional)
+
+# ===============================
+# 🔹 Installation Instructions
+# ===============================
+# For OCR support, you also need to install Tesseract separately:
+# Ubuntu/Debian: sudo apt-get install tesseract-ocr
+# macOS: brew install tesseract
+# Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+#
+# For full installation:
+# pip install -r requirements.txt
+# python -m nltk.downloader punkt
+# python -m spacy download en_core_web_sm
