@@ -1,286 +1,114 @@
 [
   {
-    "id": "kb_001",
-    "text": "Vaccines are safe and effective according to WHO.",
-    "source": "World Health Organization",
-    "source_type": "health_organization",
-    "date": "2024-01-15",
-    "url": "https://www.who.int/news-room/fact-sheets/detail/vaccines",
-    "category": "health",
-    "verification_status": "verified",
-    "confidence": 0.95,
-    "keywords": [
-      "vaccines",
-      "safe",
-      "effective",
-      "WHO",
-      "immunization"
-    ],
-    "claims": [
-      "Vaccines prevent diseases",
-      "Vaccines are thoroughly tested",
-      "WHO recommends vaccination"
-    ],
-    "related_topics": [
-      "healthcare",
-      "public health",
-      "medicine"
-    ],
-    "combined_text": "Vaccines are safe and effective according to WHO. Vaccines prevent diseases Vaccines are thoroughly tested WHO recommends vaccination vaccines safe effective WHO immunization healthcare public health medicine"
+    "text": "Vaccines are safe and effective according to the World Health Organization and peer-reviewed clinical trials.",
+    "topic": "vaccines", "source": "WHO", "confidence": 0.99
   },
   {
-    "id": "kb_002",
-    "text": "Climate change is supported by scientific consensus.",
-    "source": "IPCC",
-    "source_type": "scientific_body",
-    "date": "2023-12-10",
-    "url": "https://www.ipcc.ch/report/ar6/syr/",
-    "category": "environment",
-    "verification_status": "verified",
-    "confidence": 0.98,
-    "keywords": [
-      "climate change",
-      "global warming",
-      "scientific consensus",
-      "IPCC"
-    ],
-    "claims": [
-      "Earth's temperature is rising",
-      "Human activities cause climate change",
-      "Scientific community agrees on climate change"
-    ],
-    "related_topics": [
-      "environment",
-      "science",
-      "policy"
-    ],
-    "combined_text": "Climate change is supported by scientific consensus. Earth's temperature is rising Human activities cause climate change Scientific community agrees on climate change climate change global warming scientific consensus IPCC environment science policy"
+    "text": "The World Health Organization coordinates international public health responses and sets global health standards.",
+    "topic": "who", "source": "WHO", "confidence": 0.99
   },
   {
-    "id": "kb_003",
-    "text": "Misinformation spreads rapidly on social media platforms.",
-    "source": "MIT Media Lab",
-    "source_type": "research_institution",
-    "date": "2024-02-20",
-    "url": "https://www.media.mit.edu/projects/fake-news/overview/",
-    "category": "media",
-    "verification_status": "verified",
-    "confidence": 0.92,
-    "keywords": [
-      "misinformation",
-      "social media",
-      "fake news",
-      "viral"
-    ],
-    "claims": [
-      "False news spreads faster than truth",
-      "Social media amplifies misinformation",
-      "Bots contribute to misinformation spread"
-    ],
-    "related_topics": [
-      "social media",
-      "journalism",
-      "technology"
-    ],
-    "combined_text": "Misinformation spreads rapidly on social media platforms. False news spreads faster than truth Social media amplifies misinformation Bots contribute to misinformation spread misinformation social media fake news viral social media journalism technology"
+    "text": "COVID-19 vaccines were developed through rigorous clinical trials and approved by regulatory agencies including the FDA and EMA.",
+    "topic": "vaccines", "source": "FDA, EMA", "confidence": 0.99
   },
   {
-    "id": "kb_004",
-    "text": "No evidence supports the existence of alien technology on Earth.",
-    "source": "NASA",
-    "source_type": "space_agency",
-    "date": "2023-11-05",
-    "url": "https://www.nasa.gov/seti/",
-    "category": "science",
-    "verification_status": "verified",
-    "confidence": 0.85,
-    "keywords": [
-      "alien",
-      "UFO",
-      "extraterrestrial",
-      "NASA",
-      "technology"
-    ],
-    "claims": [
-      "No confirmed alien artifacts found",
-      "UFO sightings have natural explanations",
-      "Search for extraterrestrial intelligence continues"
-    ],
-    "related_topics": [
-      "space",
-      "astronomy",
-      "conspiracy theories"
-    ],
-    "combined_text": "No evidence supports the existence of alien technology on Earth. No confirmed alien artifacts found UFO sightings have natural explanations Search for extraterrestrial intelligence continues alien UFO extraterrestrial NASA technology space astronomy conspiracy theories"
+    "text": "Climate change is supported by scientific consensus, with over 97% of climate scientists agreeing that human activity is the primary driver.",
+    "topic": "climate", "source": "NASA, IPCC", "confidence": 0.99
   },
   {
-    "id": "kb_005",
-    "text": "Governments release classified data after certain periods.",
-    "source": "National Archives",
-    "source_type": "government",
-    "date": "2024-01-30",
-    "url": "https://www.archives.gov/declassification",
-    "category": "politics",
-    "verification_status": "verified",
-    "confidence": 0.9,
-    "keywords": [
-      "government",
-      "classified",
-      "declassification",
-      "transparency"
-    ],
-    "claims": [
-      "Declassification occurs after set periods",
-      "Some documents remain classified indefinitely",
-      "Freedom of Information requests can accelerate release"
-    ],
-    "related_topics": [
-      "government",
-      "transparency",
-      "history"
-    ],
-    "combined_text": "Governments release classified data after certain periods. Declassification occurs after set periods Some documents remain classified indefinitely Freedom of Information requests can accelerate release government classified declassification transparency government transparency history"
+    "text": "The Earth is approximately 4.5 billion years old according to radiometric dating evidence.",
+    "topic": "science", "source": "USGS", "confidence": 0.99
   },
   {
-    "id": "kb_006",
-    "text": "Elections are conducted fairly in democratic countries with proper oversight.",
-    "source": "International Institute for Democracy",
-    "source_type": "NGO",
-    "date": "2024-03-01",
-    "url": "https://www.idea.int/data-tools",
-    "category": "politics",
-    "verification_status": "verified",
-    "confidence": 0.88,
-    "keywords": [
-      "elections",
-      "democracy",
-      "voting",
-      "oversight"
-    ],
-    "claims": [
-      "Democratic elections have multiple safeguards",
-      "International observers monitor elections",
-      "Voter fraud is rare in established democracies"
-    ],
-    "related_topics": [
-      "politics",
-      "democracy",
-      "governance"
-    ],
-    "combined_text": "Elections are conducted fairly in democratic countries with proper oversight. Democratic elections have multiple safeguards International observers monitor elections Voter fraud is rare in established democracies elections democracy voting oversight politics democracy governance"
+    "text": "Microchips are not present in any approved vaccine. This claim has been thoroughly debunked by independent fact-checkers.",
+    "topic": "vaccines misinformation", "source": "Reuters Fact Check", "confidence": 0.99
   },
   {
-    "id": "kb_007",
-    "text": "Artificial intelligence systems can exhibit bias based on training data.",
-    "source": "AI Ethics Lab",
-    "source_type": "research_institution",
-    "date": "2024-02-15",
-    "url": "https://www.aiethicslab.org/bias",
-    "category": "technology",
-    "verification_status": "verified",
-    "confidence": 0.94,
-    "keywords": [
-      "AI",
-      "bias",
-      "algorithms",
-      "ethics",
-      "training data"
-    ],
-    "claims": [
-      "AI models learn from biased data",
-      "Algorithmic bias affects decisions",
-      "Fairness metrics help detect bias"
-    ],
-    "related_topics": [
-      "artificial intelligence",
-      "ethics",
-      "technology"
-    ],
-    "combined_text": "Artificial intelligence systems can exhibit bias based on training data. AI models learn from biased data Algorithmic bias affects decisions Fairness metrics help detect bias AI bias algorithms ethics training data artificial intelligence ethics technology"
+    "text": "5G networks use radio frequencies that are non-ionising and do not cause COVID-19 or other diseases.",
+    "topic": "5g misinformation", "source": "WHO, ICNIRP", "confidence": 0.99
   },
   {
-    "id": "kb_008",
-    "text": "Economic sanctions can impact target countries' GDP growth.",
-    "source": "World Bank",
-    "source_type": "international_organization",
-    "date": "2023-09-12",
-    "url": "https://www.worldbank.org/en/topic/trade",
-    "category": "economics",
-    "verification_status": "verified",
-    "confidence": 0.89,
-    "keywords": [
-      "sanctions",
-      "economy",
-      "GDP",
-      "trade",
-      "international relations"
-    ],
-    "claims": [
-      "Sanctions reduce trade volume",
-      "Economic growth slows under sanctions",
-      "Sanctions affect civilian populations"
-    ],
-    "related_topics": [
-      "economics",
-      "international relations",
-      "policy"
-    ],
-    "combined_text": "Economic sanctions can impact target countries' GDP growth. Sanctions reduce trade volume Economic growth slows under sanctions Sanctions affect civilian populations sanctions economy GDP trade international relations economics international relations policy"
+    "text": "The moon landing in 1969 was real. NASA Apollo 11 mission successfully landed astronauts on the Moon on July 20, 1969.",
+    "topic": "moon landing", "source": "NASA", "confidence": 0.99
   },
   {
-    "id": "kb_009",
-    "text": "Social media platforms use algorithms to personalize content for users.",
-    "source": "Tech Transparency Project",
-    "source_type": "research",
-    "date": "2024-01-22",
-    "url": "https://www.techtransparencyproject.org/",
-    "category": "technology",
-    "verification_status": "verified",
-    "confidence": 0.96,
-    "keywords": [
-      "algorithms",
-      "personalization",
-      "recommendation",
-      "social media"
-    ],
-    "claims": [
-      "Algorithms track user behavior",
-      "Content is personalized based on interests",
-      "Filter bubbles can form from personalization"
-    ],
-    "related_topics": [
-      "social media",
-      "algorithms",
-      "privacy"
-    ],
-    "combined_text": "Social media platforms use algorithms to personalize content for users. Algorithms track user behavior Content is personalized based on interests Filter bubbles can form from personalization algorithms personalization recommendation social media social media algorithms privacy"
+    "text": "Antibiotics treat bacterial infections but are not effective against viral infections such as the flu or common cold.",
+    "topic": "health", "source": "CDC", "confidence": 0.99
   },
   {
-    "id": "kb_010",
-    "text": "The World Health Organization coordinates international public health responses.",
-    "source": "WHO",
-    "source_type": "international_organization",
-    "date": "2024-03-10",
-    "url": "https://www.who.int/about",
-    "category": "health",
-    "verification_status": "verified",
-    "confidence": 0.97,
-    "keywords": [
-      "WHO",
-      "public health",
-      "pandemic",
-      "international cooperation"
-    ],
-    "claims": [
-      "WHO declares public health emergencies",
-      "WHO provides technical guidance to countries",
-      "WHO coordinates global health research"
-    ],
-    "related_topics": [
-      "health",
-      "international relations",
-      "pandemics"
-    ],
-    "combined_text": "The World Health Organization coordinates international public health responses. WHO declares public health emergencies WHO provides technical guidance to countries WHO coordinates global health research WHO public health pandemic international cooperation health international relations pandemics"
+    "text": "Global average surface temperatures have risen by approximately 1.1 degrees Celsius since the pre-industrial period.",
+    "topic": "climate", "source": "IPCC AR6", "confidence": 0.99
+  },
+  {
+    "text": "The Earth is round. Flat Earth claims are not supported by any scientific evidence.",
+    "topic": "science misinformation", "source": "NASA", "confidence": 0.99
+  },
+  {
+    "text": "Evolution by natural selection is the unifying theory of biology, supported by fossil records, genetics, and direct observation.",
+    "topic": "biology", "source": "National Academy of Sciences", "confidence": 0.99
+  },
+  {
+    "text": "Elections in democratic countries are overseen by independent electoral commissions with legal accountability and audit processes.",
+    "topic": "elections", "source": "Electoral bodies", "confidence": 0.90
+  },
+  {
+    "text": "The United States has a long history of military involvement in the Middle East including conflicts in Iraq, Afghanistan, and Syria.",
+    "topic": "usa military middle east", "source": "Congressional Research Service", "confidence": 0.95
+  },
+  {
+    "text": "Iran has been subject to international sanctions related to its nuclear program and regional military activities.",
+    "topic": "iran sanctions nuclear", "source": "UN Security Council", "confidence": 0.95
+  },
+  {
+    "text": "The Iran nuclear deal, formally known as the JCPOA, was signed in 2015 and involved the USA, UK, France, Germany, Russia, China, and Iran.",
+    "topic": "iran nuclear deal jcpoa", "source": "UN", "confidence": 0.95
+  },
+  {
+    "text": "Myanmar has experienced significant political instability including a military coup in February 2021 that overthrew the elected government.",
+    "topic": "myanmar coup military", "source": "UN Human Rights", "confidence": 0.95
+  },
+  {
+    "text": "Donald Trump served as the 45th President of the United States from 2017 to 2021 and was elected again as the 47th President in 2024.",
+    "topic": "trump president usa", "source": "US National Archives", "confidence": 0.95
+  },
+  {
+    "text": "Russia invaded Ukraine in February 2022 in a full-scale military offensive, triggering international sanctions and military aid to Ukraine.",
+    "topic": "russia ukraine war invasion", "source": "UN Security Council", "confidence": 0.99
+  },
+  {
+    "text": "The Israel-Gaza conflict escalated significantly in October 2023 following Hamas attacks on Israel and subsequent Israeli military operations.",
+    "topic": "israel gaza war hamas", "source": "UN OCHA", "confidence": 0.95
+  },
+  {
+    "text": "Senator is a title for elected members of a country's upper legislative chamber, such as the US Senate.",
+    "topic": "senator government politics", "source": "US Congress", "confidence": 0.90
+  },
+  {
+    "text": "Breaking news refers to newly received information about an event that is currently in progress or has just occurred.",
+    "topic": "breaking news media", "source": "General knowledge", "confidence": 0.85
+  },
+  {
+    "text": "Social media platforms including Twitter/X, Facebook, and Instagram use algorithms to personalize content for users.",
+    "topic": "social media algorithms", "source": "Platform disclosures", "confidence": 0.90
+  },
+  {
+    "text": "Misinformation and disinformation spread rapidly on social media platforms and can influence public opinion on political events.",
+    "topic": "misinformation social media politics", "source": "MIT Media Lab", "confidence": 0.95
+  },
+  {
+    "text": "Artificial intelligence systems can exhibit bias based on training data and require careful evaluation before deployment.",
+    "topic": "ai bias technology", "source": "AI research community", "confidence": 0.95
+  },
+  {
+    "text": "NASA confirms that global temperatures have risen significantly since the industrial revolution based on satellite and surface measurements.",
+    "topic": "nasa climate temperature global warming", "source": "NASA GISS", "confidence": 0.99
+  },
+  {
+    "text": "Governments release classified documents after certain periods under freedom of information laws.",
+    "topic": "government classified documents", "source": "US FOIA", "confidence": 0.90
+  },
+  {
+    "text": "No evidence supports the existence of alien technology or UFOs in possession of the United States government.",
+    "topic": "aliens ufo conspiracy", "source": "US DoD", "confidence": 0.85
   }
 ]
