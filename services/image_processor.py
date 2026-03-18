@@ -3,6 +3,7 @@
 import logging
 import os
 from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional
 import time
 
 logger = logging.getLogger(__name__)
@@ -18,19 +19,28 @@ try:
     from PIL import Image
     import cv2
     import numpy as np
+
+    # ✅ Optional: set path if needed (user can override)
+    # pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+
     TESSERACT_AVAILABLE = True
     logger.info("OCR libraries loaded")
 except ImportError as e:
     logger.warning(f"OCR libraries not available: {e}")
 
+    logger.warning(f"OCR libraries not available: {e}")
+
 
 class ImageProcessor:
+
 
     def __init__(self):
         self.supported_formats = {'.png', '.jpg', '.jpeg', '.bmp', '.tiff', '.webp'}
 
+
     def process_image(self, image_path: str, language: str = 'eng') -> Dict[str, Any]:
         start_time = time.time()
+
 
         result = {
             'success': False,
@@ -41,6 +51,7 @@ class ImageProcessor:
             'image_info': {}
         }
 
+
         try:
             if not os.path.exists(image_path):
                 result['error'] = "Image file not found"
@@ -49,6 +60,7 @@ class ImageProcessor:
             if os.path.getsize(image_path) == 0:
                 result['error'] = "Image file is empty — upload may have failed"
                 return result
+
 
             if not TESSERACT_AVAILABLE:
                 result.update({
@@ -59,9 +71,12 @@ class ImageProcessor:
                 })
                 return result
 
+
             return self._process_with_actual_ocr(image_path, language, start_time)
 
+
         except Exception as e:
+            logger.exception("Image processing failed")
             logger.exception("Image processing failed")
             result['error'] = str(e)
             return result
@@ -75,6 +90,7 @@ class ImageProcessor:
             'processing_time': 0,
             'image_info': {}
         }
+
 
         try:
             # Open directly from file path -- NO BytesIO anywhere
@@ -123,6 +139,7 @@ class ImageProcessor:
             logger.exception("OCR processing failed")
             result['error'] = str(e)
 
+
         return result
 
     def _preprocess_image(self, image):
@@ -144,6 +161,11 @@ class ImageProcessor:
 # Singleton
 _processor = None
 
+def get_image_processor():
+    global _processor
+    if _processor is None:
+        _processor = ImageProcessor()
+    return _processor
 def get_image_processor():
     global _processor
     if _processor is None:
