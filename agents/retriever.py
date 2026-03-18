@@ -1,179 +1,64 @@
-# agents/retriever.py
-
 import json
-import re
 import logging
-from pathlib import Path
+import os
+import re
+from typing import List, Dict, Any
 
 logger = logging.getLogger(__name__)
 
-STOPWORDS = {
-    "the", "is", "are", "on", "in", "at", "of", "and",
-    "a", "an", "to", "from", "this", "that", "with",
-    "for", "by", "as", "was", "were", "be", "been", "being",
-    "have", "has", "had", "do", "does", "did", "but", "or",
-    "if", "then", "else", "when", "up", "so", "than"
-}
+_knowledge_base: List[Dict[str, Any]] = []
+_KB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "knowledge_base.json")
 
-# ✅ FIX: Absolute path resolution
-BASE_DIR = Path(__file__).resolve().parent.parent
-KNOWLEDGE_BASE_PATH = BASE_DIR / "data" / "knowledge_base.json"
-
-KNOWLEDGE_BASE = []
-
-def load_knowledge_base():
-    global KNOWLEDGE_BASE
-
-    try:
-        if KNOWLEDGE_BASE_PATH.exists():
-            with open(KNOWLEDGE_BASE_PATH, "r", encoding='utf-8') as f:
-                KNOWLEDGE_BASE = json.load(f)
-            logger.info(f"Loaded {len(KNOWLEDGE_BASE)} KB items")
-        else:
-            logger.warning("Knowledge base not found. Creating empty one.")
-
-            # ✅ FIX: ensure directory exists
-            KNOWLEDGE_BASE_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-            KNOWLEDGE_BASE = []
-            with open(KNOWLEDGE_BASE_PATH, "w", encoding='utf-8') as f:
-                json.dump([], f)
-
-    except json.JSONDecodeError:
-        logger.error("Invalid JSON in knowledge base")
-        KNOWLEDGE_BASE = []
-
-    except Exception as e:
-        logger.error(f"KB load failed: {e}")
-        KNOWLEDGE_BASE = []
-
-
-# Load once at startup
-load_knowledge_base()
-
-
-def clean_text(text):
-    text = re.sub(r'[^\w\s]', ' ', text)
-    text = re.sub(r'\s+', ' ', text)
-    return text.strip().lower()
-
-
-def preprocess(text):
-    if not text or not isinstance(text, str):
-        return set()
-
-    text = clean_text(text)
-    words = text.split()
-
-    return set(w for w in words if w not in STOPWORDS and len(w) > 1)
-
-
-def simple_similarity(claim, text):
-    claim_words = preprocess(claim)
-    text_words = preprocess(text)
-
-    overlap = claim_words.intersection(text_words)
-
-    if overlap:
-        length_weight = sum(len(word) for word in overlap) / 100
-        return (len(overlap) / (len(claim_words) + 1)) + length_weight
-
-    return 0
-
-
-def retrieve(claims, top_k=2):
-    if not KNOWLEDGE_BASE or not claims:
-        return []
-
-    if isinstance(claims, str):
-        claims = [claims]
-
-    all_scored_items = {}
-
-    for claim in claims:
-        for item in KNOWLEDGE_BASE:
-
-            if isinstance(item, dict):
-                text = item.get("combined_text") or item.get("text", "")
-                confidence = item.get("confidence", 1.0)
-            else:
-                text = item
-                confidence = 1.0
-            if not text:
-                continue
-
-            score = simple_similarity(claim, text)
-
-# 🔥 Boost using KB confidence
-            score *= confidence
-
-            if score > 0:
-                if text not in all_scored_items or score > all_scored_items[text]:
-                    all_scored_items[text] = score
-
-    # ✅ FIX: preserve ranking (no set())
-    sorted_items = sorted(
-        all_scored_items.items(),
-        key=lambda x: x[1],
-        reverse=True
-    )
-
-    return [text for text, _ in sorted_items[:top_k]]
-
-
-def retrieve_with_metadata(claims, top_k=2):
-    if not KNOWLEDGE_BASE or not claims:
-        return []
-
-    if isinstance(claims, str):
-        claims = [claims]
-
-    all_scored_items = {}
-
-    for claim in claims:
-        for item in KNOWLEDGE_BASE:
-
-            if isinstance(item, dict):
-                text = item.get("combined_text") or item.get("text", "")
-                confidence = item.get("confidence", 1.0)
-            else:
-                text = item
-                confidence = 1.0
-
-            if not text:
-                continue
-
-            score = simple_similarity(claim, text)
-            score *= confidence  # 🔥 boost
-
-            if score > 0:
-                metadata = {
-                    'text': text,
-                    'score': score,
-                    'source': item.get("source", "unknown") if isinstance(item, dict) else "unknown",
-                    'confidence': confidence,
-                    'date': item.get("date") if isinstance(item, dict) else None,
-                    'url': item.get("url") if isinstance(item, dict) else None
-                }
-
-                if text not in all_scored_items or score > all_scored_items[text]['score']:
-                    all_scored_items[text] = metadata
-
-    sorted_results = sorted(
-        all_scored_items.values(),
-        key=lambda x: x['score'],
-        reverse=True
-    )
-
-    return sorted_results[:top_k]
 
 def reload_knowledge_base():
+    global _knowledge_base
+    path = os.path.abspath(_KB_PATH)
+    if not os.path.exists(path):
+        logger.warning(f"Knowledge base not found at {path}; using empty KB.")
+        _knowledge_base = []
+        return
     try:
-        load_knowledge_base()
-        return True
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        _knowledge_base = data if isinstance(data, list) else data.get("facts", [])
+        logger.info(f"Loaded {len(_knowledge_base)} knowledge-base entries")
     except Exception as e:
-        logger.error(f"Reload failed: {e}")
-        return False
+        logger.error(f"Failed to load knowledge base: {e}")
+        _knowledge_base = []
 
 
-__all__ = ['retrieve', 'retrieve_with_metadata', 'reload_knowledge_base']
+def _get_kb() -> List[Dict[str, Any]]:
+    if not _knowledge_base:
+        reload_knowledge_base()
+    return _knowledge_base
+
+
+def _tokenize(text: str) -> set:
+    return set(re.findall(r"\b[a-z]{3,}\b", text.lower()))
+
+
+def _jaccard_similarity(a: set, b: set) -> float:
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def retrieve_evidence(claims: List[str], top_k: int = 5) -> List[str]:
+    kb = _get_kb()
+    if not kb or not claims:
+        return []
+
+    claim_tokens = _tokenize(" ".join(claims))
+    scored = []
+
+    for entry in kb:
+        fact_text = entry.get("text", entry) if isinstance(entry, dict) else str(entry)
+        fact_tokens = _tokenize(fact_text)
+        score = _jaccard_similarity(claim_tokens, fact_tokens)
+        if score > 0:
+            scored.append((score, fact_text))
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+    evidence = [text for _, text in scored[:top_k]]
+    logger.debug(f"Retrieved {len(evidence)} evidence items for {len(claims)} claims")
+    return evidence

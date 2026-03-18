@@ -136,7 +136,13 @@ def register_commands(app):
 # 🔹 CREATE APP
 # ---------------------------
 app = create_app()
-
+# Pre-load model at startup so first request doesn't crash
+with app.app_context():
+    try:
+        from models.model_loader import get_zero_shot_classifier
+        get_zero_shot_classifier()
+    except Exception as e:
+        logger.warning(f"Model pre-load failed: {e}")
 
 # ---------------------------
 # 🔹 ROOT ROUTES
@@ -171,6 +177,7 @@ if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
         port=port,
-        debug=debug,
+        debug=False,
+        use_reloader=False,
         threaded=True
     )

@@ -83,7 +83,7 @@ if option == "Text":
                     if text.startswith("http"):
                         response = requests.post(f"{BACKEND_URL}/analyze-url", json={"url": text})
                     else:
-                        response = requests.post(f"{BACKEND_URL}/analyze-text", json={"text": text})
+                        response = requests.post(f"{BACKEND_URL}/analyze", json={"text": text})
 
                     data = response.json()
 
@@ -139,7 +139,7 @@ elif option == "Image":
     if uploaded_file:
 
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Image", use_column_width=True)
+        st.image(image, caption="Uploaded Image", width=700)
 
         if st.button("Analyze Image"):
 
